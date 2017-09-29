@@ -1,0 +1,182 @@
+{
+  "name": "ゲキド街",
+  "stages": [
+    {
+      "id": "gekido",
+      "position": [0, 0, 0],
+      "rotation": [0, 0, 0, 1],
+      "scale": 10.0
+    }
+  ],
+  "objects": [
+    {
+      "name": "treasure",
+      "position": [77.3, 46.4, -218.1],
+      "rotation": [0, 0.7, 0, 0.7],
+      "scale": 1.0,
+      "states": [
+        {
+          "conditions": [
+            "$selfSwitches[0] == false"
+          ],
+          "trigger": "decisionKey",
+          "modelId": "treasure",
+          "moveType": "fix",
+          "motion": "close",
+          "bubble": "？",
+          "actions": [
+            {
+              "type": "selfSwitchOn",
+              "switchNo": 0
+            },
+            {
+              "type": "changeScene",
+              "sceneId": "boxOpen",
+              "models": {
+                "character": {
+                  "party": "firstCharacter"
+                },
+                "box": {
+                  "eventObject": "self"
+                },
+                "content": {
+                  "itemId": "negi"
+                }
+              },
+              "args": {
+                "message": "negiを手に入れた！"
+              }
+            },
+            {
+              "type": "addItem",
+              "itemId": "negi",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "conditions": [],
+          "trigger": "none",
+          "modelId": "treasure",
+          "moveType": "fix",
+          "motion": "open",
+          "bubble": ""
+        }
+      ]
+    },
+    {
+      "name": "treasure2",
+      "position": [97.3, 46.4, -218.1],
+      "rotation": [0, 0.7, 0, 0.7],
+      "scale": 1.0,
+      "states": [
+        {
+          "conditions": [
+            "$selfSwitches[0] == false"
+          ],
+          "trigger": "decisionKey",
+          "modelId": "treasure",
+          "moveType": "fix",
+          "motion": "close",
+          "bubble": "？",
+          "actions": [
+            {
+              "type": "selfSwitchOn",
+              "switchNo": 0
+            },
+            {
+              "type": "changeScene",
+              "sceneId": "boxOpen",
+              "models": {
+                "character": {
+                  "party": "firstCharacter"
+                },
+                "box": {
+                  "eventObject": "self"
+                },
+                "content": {
+                  "itemId": "negi"
+                }
+              },
+              "args": {
+                "message": "negi-modokiを手に入れた！"
+              }
+            },
+            {
+              "type": "addItem",
+              "itemId": "negi",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "conditions": [],
+          "trigger": "none",
+          "modelId": "treasure",
+          "moveType": "fix",
+          "motion": "open",
+          "bubble": ""
+        }
+      ]
+    },
+    {
+      "name": "rin",
+      "position": [117.3, 46.4, -218.1],
+      "rotation": [0, 0, 0, 1],
+      "scale": 1.0,
+      "states": [
+        {
+          "trigger": "decisionKey",
+          "modelId": "rin",
+          "moveType": "fix",
+          "motion": "idle",
+          "bubble": "？",
+          "actions": [
+            {
+              "type": "showMessage",
+              "message": {
+                "<self>": "森に行く準備できた？",
+                "<player>": "うーん..."
+              },
+              "options": [ "うん", "まだ" ]
+            },
+            {
+              "type": "switch",
+              "variable": "$response",
+              "cases": {
+                "0": [
+                  {
+                    "type": "showMessage",
+                    "message": {
+                      "<self>": "森へ出発！"
+                    }
+                  },
+                  {
+                    "type": "changeMap",
+                    "map": "swamp"
+                  }
+                ],
+                "1": [
+                  {
+                    "type": "showMessage",
+                    "message": {
+                      "<self>": "はやくー"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "bgm": {
+    "id": "mukashi"
+  },
+  "initialCharacterState": {
+    "position": [0, 46.4, 0],
+    "rotation": [0, 0, 0, 1]
+  }
+}
+
