@@ -143,28 +143,34 @@
             {
               "type": "switch",
               "variable": "$response",
-              "cases": {
-                "0": [
-                  {
-                    "type": "showMessage",
-                    "message": {
-                      "<self>": "森へ出発！"
+              "cases": [
+                {
+                  "value": "0",
+                  "actions": [
+                    {
+                      "type": "showMessage",
+                      "message": {
+                        "<self>": "森へ出発！"
+                      }
+                    },
+                    {
+                      "type": "changeMap",
+                      "map": "swamp"
                     }
-                  },
-                  {
-                    "type": "changeMap",
-                    "map": "swamp"
-                  }
-                ],
-                "1": [
-                  {
-                    "type": "showMessage",
-                    "message": {
-                      "<self>": "はやくー"
+                  ]
+                },
+                {
+                  "value": "1",
+                  "actions": [
+                    {
+                      "type": "showMessage",
+                      "message": {
+                        "<self>": "はやくー"
+                      }
                     }
-                  }
-                ]
-              }
+                  ]
+                }
+              ]
             }
           ]
         }
