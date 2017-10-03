@@ -1,0 +1,58 @@
+{
+  "effects": [],
+  "images": [
+    {
+      "id": "clothes",
+      "updated_at": "2017-10-01T00:00:00Z"
+    },
+    {
+      "id": "dpadDownArrow",
+      "updated_at": "2017-10-01T00:00:00Z"
+    },
+    {
+      "id": "dpadLeftArrow",
+      "updated_at": "2017-10-01T00:00:00Z"
+    },
+    {
+      "id": "dpadRightArrow",
+      "updated_at": "2017-10-01T00:00:00Z"
+    },
+    {
+      "id": "dpadUpArrow",
+      "updated_at": "2017-10-01T00:00:00Z"
+    },
+    {
+      "id": "finger",
+      "updated_at": "2017-10-01T00:00:00Z"
+    },
+    {
+      "id": "key",
+      "updated_at": "2017-10-01T00:00:00Z"
+    },
+    {
+      "id": "mikuIcon",
+      "updated_at": "2017-10-01T00:00:00Z"
+    },
+    {
+      "id": "ring",
+      "updated_at": "2017-10-01T00:00:00Z"
+    },
+    {
+      "id": "sack",
+      "updated_at": "2017-10-01T00:00:00Z"
+    },
+    {
+      "id": "sword",
+      "updated_at": "2017-10-01T00:00:00Z"
+    }
+  ],
+  "lang": [],
+  "maps": [],
+  "misc": {},
+  "models": [],
+  "motions": [],
+  "musics": [],
+  "scenes": [],
+  "sounds": []
+}
+
