@@ -1,0 +1,14 @@
+{
+  "path": "box.pmx",
+  "scale": 1.0,
+  "motions": [
+    {
+      "name": "close",
+      "motionId": "boxClosePose"
+    },
+    {
+      "name": "open":,
+      "id": "boxOpenPose"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "path": "鏡音リン_act2.pmd",
+  "scale": 1.0,
+  "physicsType": "character",
+    "motions": [
+                {
+                "name": "walk",
+                "motionId": "running"
+                },
+                {
+                "name": "idle",
+                "motionId": "idle"
+                }
+                ],
+  "walkSpeed": 50.4
+}
