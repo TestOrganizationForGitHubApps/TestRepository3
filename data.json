@@ -89,7 +89,24 @@
     }
   ],
   "motions": [],
-  "musics": [],
+  "musics": [
+    {
+      "id": "montblanc",
+      "updated_at": "2017-10-01T00:00:00Z"
+    },
+    {
+      "id": "mukashi",
+      "updated_at": "2017-10-01T00:00:00Z"
+    },
+    {
+      "id": "nologic",
+      "updated_at": "2017-10-01T00:00:00Z"
+    },
+    {
+      "id": "prince",
+      "updated_at": "2017-10-01T00:00:00Z"
+    }
+  ],
   "scenes": [],
   "sounds": [
     {
