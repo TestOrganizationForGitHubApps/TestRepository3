@@ -1,4 +1,7 @@
 {
   "path": "upArrow.png",
-  "height": 64
+  "height": 64,
+  "tags": [
+    "icon"
+  ]
 }
