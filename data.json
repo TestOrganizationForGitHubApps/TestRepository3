@@ -112,7 +112,24 @@
       "updated_at": "2017-10-01T00:00:00Z"
     }
   ],
-  "motions": [],
+  "motions": [
+    {
+      "id": "boxOpenPose",
+      "updated_at": "2017-10-01T00:00:00Z"
+    },
+    {
+      "id": "boxClosePose",
+      "updated_at": "2017-10-01T00:00:00Z"
+    },
+    {
+      "id": "idle",
+      "updated_at": "2017-10-01T00:00:00Z"
+    },
+    {
+      "id": "running",
+      "updated_at": "2017-10-01T00:00:00Z"
+    }
+  ],
   "musics": [
     {
       "id": "montblanc",
