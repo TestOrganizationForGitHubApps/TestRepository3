@@ -132,7 +132,12 @@
     {
       "id": "running",
       "updated_at": "2017-10-01T00:00:00Z"
+    },
+    {
+      "id": "run",
+      "updated_at": "2017-10-01T00:00:00Z"
     }
+
   ],
   "musics": [
     {
